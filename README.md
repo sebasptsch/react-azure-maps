@@ -1,5 +1,9 @@
 # React-Azure-Maps
 
+This package is a fork of the azure maps continuation of the project with a very minor fix for package exports. If you are looking to use this please explore the official package first.
+
+The original readme can be found below.
+
 This project is community-driven initiative originally created by amazing [@psrednicki](https://github.com/psrednicki), [@msasinowski](https://github.com/msasinowski) and [@tbajda](https://github.com/tbajda) and is now maintained by the Azure Maps team.
 
 [![npm](https://img.shields.io/npm/v/react-azure-maps.svg) ![npm](https://img.shields.io/npm/dm/react-azure-maps.svg)](https://www.npmjs.com/package/react-azure-maps) [![license](https://img.shields.io/npm/l/react-azure-maps.svg)](https://github.com/Azure/react-azure-maps/blob/master/LICENSE)
@@ -68,14 +72,14 @@ The library implements a lot of ready to use components like `AzureMapFeature, A
 
 ```javascript
 import React from 'react'
-import {AzureMap, AzureMapsProvider, IAzureMapOptions} from 'react-azure-maps'
-import {AuthenticationType} from 'azure-maps-control'
+import { AzureMap, AzureMapsProvider, IAzureMapOptions } from 'react-azure-maps'
+import { AuthenticationType } from 'azure-maps-control'
 
 const option: IAzureMapOptions = {
-    authOptions: {
-        authType: AuthenticationType.subscriptionKey,
-        subscriptionKey: '' // Your subscription key
-    },
+  authOptions: {
+    authType: AuthenticationType.subscriptionKey,
+    subscriptionKey: '' // Your subscription key
+  }
 }
 
 const DefaultMap: React.FC = () => (
@@ -84,7 +88,7 @@ const DefaultMap: React.FC = () => (
       <AzureMap options={option} />
     </div>
   </AzureMapsProvider>
-);
+)
 
 export default DefaultMap
 ```
@@ -180,7 +184,6 @@ Pull requests are welcomed. For major changes, please open an issue first to dis
 <!-- prettier-ignore-end -->
 
 <!-- CREATORS:END -->
-
 
 ## License
 
